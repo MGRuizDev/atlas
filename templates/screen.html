@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Atlas</title>
+    <link rel="stylesheet" href="../static/css/flexboxgrid.css" />
+    <link rel="stylesheet" href="../static/css/animate.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row middle-xs middle-sm middle-md middle-lg center-xs center-sm center-md center-lg" id="screen">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="responce">
+          <h2>{{ word }}</h2>
+          <ol>
+            {% for def in definition %}
+              <li>{{def}}</li>
+            {% endfor %}
+          </ol>
+          <!--<p>{{ definition }}</p>-->
+        </div>
+      </div>
+    </div>
+
+    <script src="../static/css/main.js"></script>
+  </body>
+</html>

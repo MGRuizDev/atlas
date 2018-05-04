@@ -1,0 +1,64 @@
+
+body{
+  margin: 0;
+  font-family: 'Nixie One', cursive;
+}
+.container{
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+
+}
+
+/* TITLE */
+h1{
+  padding-top: 250px;
+  font-size: 70px;
+
+}
+/*  SUBMITE  */
+.sub_container{
+  height: 205px;
+  margin: -23px auto;
+  padding: 0;
+}
+form input{
+  width: 20%;
+  height: 30px;
+  background-color: #CFCED3;
+  animation: shake;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+}
+
+form button{
+  width: 30px;
+  height: 30px;
+  border-radius: 3em;
+  border: 1px solid #CFCED3;
+  box-shadow: 1px 1px 1px 0.3px black;
+}
+
+form button:hover{
+  background-color: black;
+  cursor: pointer;
+}
+/*  SCREEN  */
+#screen{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url('/static/img/wall.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: none;
+}
+
+#responce p{
+  color: #030302;
+}
